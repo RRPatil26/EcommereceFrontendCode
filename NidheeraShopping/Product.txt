@@ -1,0 +1,28 @@
+Product  Entity class:--------------------
+
+@Entity
+@Table(name = "products")
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long productId;
+
+    private String productName;
+
+    private String description;
+
+    private Double price;
+
+    private Integer stockQuantity;
+
+    private String imageUrl;
+
+    private String brand;
+
+    private Double rating;
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+}

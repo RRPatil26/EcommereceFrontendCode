@@ -130,6 +130,12 @@ const addToCart = async (product) => {
           </button>
 
         </div>
+        <Link
+                                            to="/"
+                                            className="ms-2"
+                                        >
+                                           Go Back to Home
+                                        </Link>
 
       </div>
 
